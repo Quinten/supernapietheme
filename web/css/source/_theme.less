@@ -16,13 +16,13 @@
 
 /* Apply colors to different var */
 
-@page__background-color: @supernapie-base-pink;
+@page__background-color: @supernapie-lite-pink;
 @sidebar__background-color: @supernapie-lite-pink;
 @primary__color: @supernapie-base-grey;
 @border-color__base: @color-gray80;
 
-@link__color: @supernapie-base-blue;
-@link__hover__color: @supernapie-lite-blue;
+@link__color: @supernapie-base-green;
+@link__hover__color: darken(@supernapie-base-green, 5%);
 
 //  Buttons
 @button__color: @color-gray20;
@@ -30,11 +30,11 @@
 @button__border: 1px solid @border-color__base;
 
 //  Primary button
-@button-primary__background: @supernapie-base-blue;
-@button-primary__border: 1px solid @supernapie-base-blue;
+@button-primary__background: @link__color;
+@button-primary__border: 1px solid @link__color;
 @button-primary__color: @supernapie-base-white;
-@button-primary__hover__background: darken(@supernapie-base-blue, 5%);
-@button-primary__hover__border: 1px solid darken(@supernapie-base-blue, 5%);
+@button-primary__hover__background: @link__hover__color;
+@button-primary__hover__border: 1px solid @link__hover__color;
 @button-primary__hover__color: @supernapie-base-white;
 
 //  Navigation
@@ -54,5 +54,5 @@
 @form-element-input-placeholder__color: lighten(@supernapie-base-grey, 10%);
 
 //  Header icons
-@header-icons-color: @supernapie-base-blue;
-@header-icons-color-hover: @supernapie-lite-blue;
+@header-icons-color: @link__color;
+@header-icons-color-hover: @link__hover__color;
