@@ -7,26 +7,31 @@
 @supernapie-base-pink: #FCE0C8;
 @supernapie-lite-pink: #FFEFDC;
 
-@supernapie-base-blue: #68A4AF;
-@supernapie-lite-blue: #C8F3FC;
+//@supernapie-base-blue: #68A4AF;
+//@supernapie-lite-blue: #C8F3FC;
+@supernapie-base-blue: #27D2D7;
 
 @supernapie-base-grey: #59504F;
+@supernapie-pale-grey: #F9F0EF;
+@supernapie-lite-grey: #B9B0AF;
+@supernapie-deep-grey: #39302F;
+@supernapie-dark-grey: #19100F;
 
 @supernapie-base-white: #FFFFFF;
 
 /* Apply colors to different var */
 
-@page__background-color: @supernapie-lite-pink;
-@sidebar__background-color: @supernapie-lite-pink;
+@page__background-color: @supernapie-base-white;
+@sidebar__background-color: @supernapie-pale-grey;
 @primary__color: @supernapie-base-grey;
-@border-color__base: @color-gray80;
+@border-color__base: @supernapie-lite-grey;
 
-@link__color: @supernapie-base-green;
-@link__hover__color: darken(@supernapie-base-green, 5%);
+@link__color: @supernapie-base-blue;
+@link__hover__color: darken(@supernapie-base-blue, 5%);
 
 //  Buttons
-@button__color: @color-gray20;
-@button__background: @color-gray80;
+@button__color: @supernapie-deep-grey;
+@button__background: @supernapie-lite-grey;
 @button__border: 1px solid @border-color__base;
 
 //  Primary button
@@ -38,13 +43,13 @@
 @button-primary__hover__color: @supernapie-base-white;
 
 //  Navigation
-@navigation-level0-item__color: @supernapie-lite-pink;
-@submenu-item__color: @supernapie-lite-pink;
+@navigation-level0-item__color: @link__color;
+@submenu-item__color: @link__color;
 
 @navigation__background: @supernapie-lite-pink;
-@navigation-desktop-level0-item__color: @supernapie-lite-pink;
-@navigation-desktop-level0-item__hover__color: lighten(@supernapie-lite-pink, 10%);
-@navigation-desktop-level0-item__active__color: @navigation-desktop-level0-item__color;
+@navigation-desktop-level0-item__color: @link__color;
+@navigation-desktop-level0-item__hover__color: @link__hover__color;
+@navigation-desktop-level0-item__active__color: @link__color;
 
 //  Tabs
 @tab-control__background-color: @page__background-color;
@@ -62,3 +67,10 @@
 @link__hover__text-decoration: none;
 @link__visited__text-decoration: none;
 @link__active__text-decoration: none;
+
+// cart
+//@checkout-progress-bar-item__active__background-color: @link__color;
+//@checkout-shipping-item__active__border-color: @link__color;
+
+
+
