@@ -79,4 +79,69 @@
 //@checkout-shipping-item__active__border-color: @link__color;
 
 
+/* FONT SETTINGS */
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-family-name__base: 'Tahoma';
+@font-family__base: @font-family-name__base, @font-family__sans-serif;
+
+@font-family-name__secondary: 'Calligraffitti';
+@font-family__secondary: @font-family-name__secondary, @font-family__serif;
+
+@font-size-ratio__base: 1.6;
+@line-height__base: 1.625;
+
+@p__margin-bottom: @indent__base;
+
+/* HEADINGS FONTS */
+
+@heading__font-family__base: @font-family__secondary;
+@heading__margin-top__base: 0;
+@heading__margin-bottom__base: @indent__base;
+
+@h1__font-size-desktop: ceil((@font-size__base * 1.85));
+@h1__margin-top: @heading__margin-top__base;
+@h1__margin-bottom: @heading__margin-bottom__base;
+
+@h2__font-size-desktop: ceil((@font-size__base * 1.70));
+@h2__margin-top: @heading__margin-top__base;
+@h2__margin-bottom: @heading__margin-bottom__base;
+
+@h3__font-size-desktop: ceil((@font-size__base * 1.65));
+@h3__margin-top: @heading__margin-top__base;
+@h3__margin-bottom: @heading__margin-bottom__base;
+
+@h4__font-size-desktop: ceil((@font-size__base * 1.62));
+@h4__margin-top: @heading__margin-top__base;
+@h4__margin-bottom: @heading__margin-bottom__base;
+
+@h5__font-size-desktop: ceil((@font-size__base * 1.59));
+@h5__margin-top: @heading__margin-top__base;
+@h5__margin-bottom: @heading__margin-bottom__base;
+
+@h6__font-size-desktop: ceil((@font-size__base * 1.56));
+@h6__margin-top: @heading__margin-top__base;
+@h6__margin-bottom: @heading__margin-bottom__base;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    h1 {
+        .lib-css(margin-bottom, @heading__margin-bottom__base);
+    }
+}
+
+
+
 
