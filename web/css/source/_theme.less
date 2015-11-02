@@ -84,11 +84,6 @@
 
 /* FONT SETTINGS */
 
-* {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
 @font-family-name__base: 'Tahoma';
 @font-family__base: @font-family-name__base, @font-family__sans-serif;
 
@@ -129,21 +124,6 @@
 @h6__font-size-desktop: ceil((@font-size__base * 1.56));
 @h6__margin-top: @heading__margin-top__base;
 @h6__margin-bottom: @heading__margin-bottom__base;
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 400;
-}
-
-.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
-    h1 {
-        .lib-css(margin-bottom, @heading__margin-bottom__base);
-    }
-}
 
 
 
