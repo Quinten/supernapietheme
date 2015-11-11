@@ -31,6 +31,55 @@
     }
 }
 
+//
+//  header panel
+//  _____________________________________________
 
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
 
+    .page-header {
 
+        .header.panel {
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
+
+        .panel.wrapper {
+            border-bottom: 0;
+        }
+    }
+
+    .header.panel > .header.links > li {
+        font-size: 14px;
+
+        &.welcome {
+            line-height: inherit;
+
+            span {
+                line-height: 1.4;
+            }
+        }
+    }
+}
+
+//
+//  Navigation
+//  _____________________________________________
+
+& when (@media-common = true) {
+
+    .navigation {
+
+        li.level1, li.level2 {
+            margin: 0;
+        }
+    }
+
+    .block-collapsible-nav {
+
+        .item {
+            margin: 0;
+        }
+    }
+
+}
