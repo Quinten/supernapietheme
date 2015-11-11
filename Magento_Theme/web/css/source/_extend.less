@@ -32,6 +32,49 @@
 }
 
 //
+//  Icons
+//  _____________________________________________
+
+& when (@media-common = true) {
+
+    // cart
+    .minicart-wrapper .action.showcart:before,
+    .minicart-wrapper .action.showcart.active:before {
+        content: "a";
+        font-family: 'supernapie';
+        font-size: 24px;
+    }
+
+    // newsletter
+    .block.newsletter .field .control { position: relative; }
+    .block.newsletter .field .control:before {
+        content: "b";
+        font-family: 'supernapie';
+        font-size: 20px;
+        position: absolute;
+        left: 9px;
+    }
+
+    // hamburger menu
+    .nav-toggle:before {
+        content: "c";
+        font-family: 'supernapie';
+        font-size: 34px;
+    }
+}
+
+//
+//  Footer
+//  _____________________________________________
+
+& when (@media-common = true) {
+
+    .block.newsletter input {
+        height: 34px;
+    }
+}
+
+//
 //  header panel
 //  _____________________________________________
 
