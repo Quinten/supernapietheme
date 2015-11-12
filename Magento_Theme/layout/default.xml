@@ -19,5 +19,9 @@
         <referenceBlock name="customer-account-navigation-downloadable-products-link" remove="true"/>
         <referenceBlock name="sale.reorder.sidebar" remove="true"/>
         <referenceBlock name="catalog.compare.sidebar" remove="true"/>
+
+        <!-- move the logo -->
+        <move element="logo" destination="header-wrapper" after="-" />
+
     </body>
 </page>
