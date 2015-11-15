@@ -23,5 +23,10 @@
         <!-- move the logo -->
         <move element="logo" destination="header-wrapper" after="-" />
 
+        <!-- footer links -->
+        <referenceBlock name="catalog-search-advanced-link" remove="true" />
+        <referenceBlock name="sales-guest-form-link" remove="true" />
+        <referenceBlock name="search-term-popular-link" remove="true" />
+
     </body>
 </page>
