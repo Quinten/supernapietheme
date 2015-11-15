@@ -81,6 +81,10 @@
         @_shadow: inset 0 15px 20px -10px rgba(50, 50, 50, 0.5);
         .lib-css(box-shadow, @_shadow, 1);
     }
+
+    .footer small.copyright {
+        font-size: 13px;
+    }
 }
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
@@ -88,6 +92,10 @@
     .block.newsletter {
         width: 100%;
         max-width: 360px;
+    }
+
+    .footer small.copyright {
+        text-align: right;
     }
 }
 
