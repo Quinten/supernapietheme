@@ -204,6 +204,111 @@
     .header.content {
         padding: 20px;
     }
+
+    // ribbon effect
+    body {
+        background: @sidebar__background-color;
+    }
+
+    .page-wrapper {
+        overflow: hidden;
+    }
+
+    .page-header .header.panel,
+    .header.content {
+        background: @page__background-color;
+        @_shadow: 0 20px 20px 0px rgba(50, 50, 50, 0.5);
+        .lib-css(box-shadow, @_shadow, 1);
+     }
+
+    .page-header .header.panel {
+        padding-top: 27px;
+        margin-top: -20px;
+    }
+
+    .page-main {
+        background: @page__background-color;
+        padding-top: 30px;
+        @_shadow: 0 20px 20px 0px rgba(50, 50, 50, 0.5);
+        .lib-css(box-shadow, @_shadow, 1);
+     }
+
+    .nav-sections {
+        margin-bottom: 0;
+        background: transparent none;
+        @_shadow: none;
+        .lib-css(box-shadow, @_shadow, 1);
+    }
+
+    .nav-sections-item-content {
+        box-sizing: border-box;
+        padding: 0;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .navigation {
+        box-sizing: content-box;
+        padding: 0 16px;
+        width: 100%;
+        margin-left: -16px;
+
+        ul {
+            background: @sidebar__background-color;
+            box-sizing: content-box;
+            width: 100%;
+            padding: 0 8px 0 24px;
+            margin-left: -16px;
+            z-index: 4;
+            @_shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.4);
+            .lib-css(box-shadow, @_shadow, 1);
+         }
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-right: 16px solid @supernapie-deep-lace;
+            border-top: 16px solid transparent;
+            border-bottom: 16px solid transparent;
+            top: 100%;
+            left: 0;
+            margin-top: -16px;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 16px solid @supernapie-deep-lace;
+            border-top: 16px solid transparent;
+            border-bottom: 16px solid transparent;
+            top: 100%;
+            right: 0;
+            margin-top: -16px;
+        }
+    }
+
+    .breadcrumbs {
+        background: @page__background-color;
+        margin-bottom: 0px;
+        padding-top: 30px;
+        @_shadow: 0 20px 20px 0px rgba(50, 50, 50, 0.5);
+        .lib-css(box-shadow, @_shadow, 1);
+    }
+
+    .breadcrumbs + .page-main {
+        padding-top: 24px;
+    }
+
+    .page-footer {
+        background: transparent none;
+        @_shadow: none;
+        .lib-css(box-shadow, @_shadow, 1);
+    }
 }
 
 //
