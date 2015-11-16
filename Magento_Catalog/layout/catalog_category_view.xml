@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Webwolk. All rights reserved.
+ * See LICENSE for license details.
+ */
+-->
+<!-- 1column layout for categories -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd" layout="1column">
+    <body>
+    </body>
+</page>
