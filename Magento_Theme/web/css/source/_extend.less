@@ -223,7 +223,94 @@
 
         .item {
             margin: 0;
+
+            &.current {
+
+                a, strong {
+                    position: relative;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        border-left: 6px solid @color-orange-red1;
+                        border-top: 6px solid transparent;
+                        border-bottom: 6px solid transparent;
+                        top: 50%;
+                        left: 0;
+                        margin-top: -6px;
+                        z-index: 5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+    .navigation .level0.active > a:not(.ui-state-active), .navigation .level0.has-active > a:not(.ui-state-active),
+    .navigation .submenu:not(:first-child) .level1.active > a {
+        padding-left: 12px;
+        border-width: 0 0 0 3px;
+        position: relative;
+
+        span:not(.ui-menu-icon) {
+            margin-left: 0;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 6px solid @color-orange-red1;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            top: 50%;
+            left: 0;
+            margin-top: -6px;
+            z-index: 5;
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+    .navigation .level0.active > .level-top, .navigation .level0.has-active > .level-top {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-bottom: 6px solid @color-orange-red1;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            left: 50%;
+            bottom: 0;
+            margin-left: -6px;
+            z-index: 5;
         }
     }
 
+    .navigation .level0 .submenu .active > a {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 6px solid @color-orange-red1;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            top: 50%;
+            left: 0;
+            margin-top: -6px;
+            z-index: 5;
+        }
+    }
 }
