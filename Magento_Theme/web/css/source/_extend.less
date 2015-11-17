@@ -435,6 +435,37 @@
     }
 }
 
+//
+//  Product view
+//  _____________________________________________
+
+& when (@media-common = true) {
+
+    .catalog-product-view {
+
+        .product-social-links {
+            display: none;
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+    .catalog-product-view {
+
+        &.page-layout-1column {
+
+            .product-info-main {
+                width: 50%;
+            }
+
+            .product.media {
+                width: 47%;
+            }
+        }
+    }
+}
+
 
 
 
