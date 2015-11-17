@@ -26,6 +26,7 @@
 }
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
     h1 {
         .lib-css(margin-bottom, @heading__margin-bottom__base);
     }
@@ -201,8 +202,30 @@
         font-size: 4.2rem;
     }
 
+    .page-header .header.panel {
+        box-sizing: border-box;
+        min-height: 58px;
+    }
+
     .header.content {
-        padding: 20px;
+        box-sizing: border-box;
+        min-height: 98px;
+        padding: 20px 40px 20px 98px;
+        position: relative;
+        background: @page__background-color;
+
+        &:before {
+            content:"";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            height: 128px;
+            background: url('@{baseDir}images/voetje.png') no-repeat bottom left;
+            background-size: 100px 128px;
+            z-index: 1;
+        }
     }
 
     // ribbon effect
@@ -216,12 +239,12 @@
 
     .page-header .header.panel,
     .header.content {
-        background: @page__background-color;
         @_shadow: 0 20px 20px 0px rgba(50, 50, 50, 0.5);
         .lib-css(box-shadow, @_shadow, 1);
-     }
+    }
 
     .page-header .header.panel {
+        background: @page__background-color;
         padding-top: 27px;
         margin-top: -20px;
     }
