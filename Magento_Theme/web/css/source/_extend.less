@@ -489,6 +489,46 @@
     }
 }
 
+//
+//  Checkout
+//  _____________________________________________
+
+& when (@media-common = true) {
+
+    .checkout-index-index {
+
+        .nav-sections {
+            display: block;
+        }
+
+        .nav-toggle {
+            display: inline-block;
+        }
+
+        .minicart-wrapper {
+            display: none;
+        }
+    }
+
+    .cart-summary {
+        padding: 20px;
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+    .checkout-index-index {
+
+        .nav-toggle {
+            display: none;
+        }
+
+        .minicart-wrapper {
+            display: inline-block;
+        }
+    }
+}
+
 
 
 
