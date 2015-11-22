@@ -19,12 +19,24 @@
 
 <nav class="navigation" role="navigation">
     <ul data-mage-init='{"menu":{"responsive":true, "expanded":true, "position":{"my":"left top","at":"left bottom"}}}'>
-        <li class="level0"><a href="/voetverzorging/" class="level-top">Voetverzorging</a></li>
-        <!--<li class="level0"><a href="/tegemoetkoming/" class="level-top">Tegemoetkoming</a></li>-->
-        <li class="level0"><a href="/voetreflexologie/" class="level-top">Voetreflexologie</a></li>
+        <li class="level0 level-top parent"><a href="/voetverzorging/" class="level-top"><span>Voetverzorging</span></a>
+            <ul class="level0 submenu">
+                <li class="level1"><a href="/tarief-voetverzorging/">Tarief voetverzorging</a></li>
+                <li class="level1"><a href="/tegemoetkoming/">Tegemoetkoming</a></li>
+            </ul>
+        </li>
+        <li class="level0 level-top parent"><a href="/voetreflexologie/" class="level-top"><span>Voetreflexologie</span></a>
+            <ul class="level0 submenu">
+                <li class="level1"><a href="/tarief-voetreflexologie/">Tarief voetreflexologie</a></li>
+            </ul>
+         </li>
         <?php echo $_menu; ?>
         <li class="level0"><a href="/over-mezelf/" class="level-top">Over mezelf</a></li>
         <li class="level0"><a href="/memory-spel/" class="level-top">Spelletje</a></li>
         <li class="level0"><a href="/contact/" class="level-top">Contact</a></li>
      </ul>
 </nav>
+
+
+
+
