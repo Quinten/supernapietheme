@@ -441,6 +441,19 @@
             z-index: 5;
         }
     }
+
+    // allow more items when window width is around 768px
+    .navigation .level0 {
+        margin: 0;
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
+
+    // put items a little bit more apart when window width is more then 1024px
+    .navigation .level0 {
+        margin: 0 13px 0 0;
+    }
 }
 
 //
