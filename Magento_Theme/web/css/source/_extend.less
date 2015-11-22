@@ -286,7 +286,7 @@
             z-index: 4;
             @_shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.4);
             .lib-css(box-shadow, @_shadow, 1);
-         }
+        }
 
         &:before {
             content: "";
@@ -441,6 +441,16 @@
             z-index: 5;
         }
     }
+
+    .navigation .level0 .submenu {
+        min-width: 280px;
+
+        a {
+            padding: 8px 11px;
+        }
+    }
+
+
 
     // allow more items when window width is around 768px
     .navigation .level0 {
