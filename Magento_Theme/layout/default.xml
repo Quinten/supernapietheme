@@ -28,5 +28,8 @@
         <referenceBlock name="sales-guest-form-link" remove="true" />
         <referenceBlock name="search-term-popular-link" remove="true" />
 
+        <!-- remove left-nav on category view -->
+        <referenceBlock name="catalog.leftnav" remove="true" />
+        <referenceBlock name="catalogsearch.leftnav" remove="true" />
     </body>
 </page>
