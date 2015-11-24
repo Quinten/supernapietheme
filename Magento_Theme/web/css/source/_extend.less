@@ -593,6 +593,48 @@
     }
 }
 
+//
+//  kotn
+//  _____________________________________________
 
+& when (@media-common = true) {
 
+    .kotn > div {
+        margin-bottom: 1em;
+    }
+}
 
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+    .kotn {
+        margin-left: -3%;
+        max-width: 105%;
+    }
+
+    .kotn:before, .kotn:after {
+        content: " ";
+        display: table;
+    }
+
+    .kotn:after {
+        clear: both;
+    }
+
+    .kotn > div {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 3%;
+        margin-right: -.25em;
+        width: 47%;
+        padding: 0;
+        float: none;
+    }
+
+    .kotn > div.kot1-3 {
+        width: 30.33%;
+    }
+
+    .kotn > div.kot2-3 {
+        width: 63.66%;
+    }
+}
