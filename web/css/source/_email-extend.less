@@ -11,8 +11,31 @@
 //  as the latter will cause font rendering issues if the web fonts are inaccessible.
 @import url("@{baseUrl}css/email-fonts.css");
 
+html,
+body {
+    background-color: @supernapie-base-lace;
+}
+
+.wrapper-inner {
+    padding-bottom: 0;
+}
+
 .header {
-    background: #ffefdc;
+    background: @supernapie-lite-lace;
+    padding: 0;
+
+    img {
+        display: block;
+    }
+}
+
+.footer {
+    background: @supernapie-lite-lace;
+    padding: 26px 13px 39px;
+
+    p {
+        margin: bottom: 0;
+    }
 }
 
 
