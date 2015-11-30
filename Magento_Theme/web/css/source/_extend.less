@@ -643,3 +643,26 @@
         width: 63.66%;
     }
 }
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+    .fieldset > .field:not(.choice) {
+
+        > .label {
+            width: 27.5%;
+            text-align: left;
+        }
+
+        > .control {
+            width: 72.5%;
+        }
+    }
+
+    .legend {
+        margin-left: 27.5%!important;
+    }
+}
+
+
+
+

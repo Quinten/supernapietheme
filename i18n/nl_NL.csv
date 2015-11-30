@@ -122,7 +122,17 @@
 "Use as my default shipping address","Gebruik dit adres als mijn standaard verzendadres."
 "Delete Address","Verwijder dit adres"
 "Are you sure you want to delete this address?","Ben je zeker dat je dit adres wil verwijderen?"
-
+"There was recently a request to change the password for your account.","Er is een aanvraag geweest om het wachtwoord van je account te veranderen."
+"If you requested this change, set a new password here:","Je kan je wachtwoord aanpassen via deze link:"
+"Set a New Password","Verander wachtwoord"
+"If you did not make this request, you can ignore this email and your password will remain the same.","Heb je deze verandering niet aangevraagd, negeer dan gewoon deze e-mail en je wachtwoord zal hetzelfde blijven."
+"New Password","Nieuw wachtwoord"
+"Confirm New Password","Herhaal nieuw wachtwoord"
+"You updated your password.","Je wachtwoord is aangepast."
+"Your password reset link has expired.","De link om je wachtwoord te veranderen is verlopen."
+"Tax/VAT number","Btw nummer"
+"Date of Birth","Geboortedatum"
+"Current Password","Huidige wachtwoord"
 
 
 
