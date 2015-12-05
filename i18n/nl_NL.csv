@@ -133,6 +133,18 @@
 "Tax/VAT number","Btw nummer"
 "Date of Birth","Geboortedatum"
 "Current Password","Huidige wachtwoord"
+"Welcome to %store_name.","Welkom bij %store_name."
+"To sign in to our site, use these credentials during checkout or on the <a href=""%customer_url"">My Account</a> page:","Gebruik de volgende gegevens om in te loggen tijdens het afrekenen in de webwinkel of op de <a href=""%customer_url"">Mijn account</a> pagina's:"
+"Email:","E-mail:"
+"Password:","Wachtwoord:"
+"Password you set when creating account","Het wachtwoord dat je instelde."
+"Forgot your account password? Click <a href=""%reset_url"">here</a> to reset it.","Ben je je wachtwoord vergeten? Klik <a href=""%reset_url"">hier</a> om het opnieuw in stellen."
+"When you sign in to your account, you will be able to:","Als je inlogt met je account, kan je:"
+"Proceed through checkout faster","sneller afrekenen in de webwinkel"
+"Check the status of orders","de status van je bestelling bekijken"
+"View past orders","vroegere bestellingen bekijken"
+"Store alternative addresses (for shipping to multiple family members and friends)","verschillende adressen opslaan (voor verzending naar familieleden en vrienden)"
+
 
 
 
