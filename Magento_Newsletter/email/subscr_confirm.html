@@ -1,0 +1,19 @@
+<!--
+/**
+ * Copyright © 2015Webwolk. All rights reserved.
+ * See LICENSE for license details.
+ */
+-->
+<!--@subject Inschrijving seizoensbrief: bevestiging nodig @-->
+<!--@vars {
+"var customer.name":"Customer Name",
+"var subscriber.getConfirmationLink()":"Subscriber Confirmation URL"
+} @-->
+
+{{template config_path="design/email/header_template"}}
+
+<p class="greeting">{{trans "Thank you for subscribing to our newsletter."}}</p>
+<p>{{trans "To begin receiving the newsletter, you must first confirm your subscription by clicking on the following link:"}}</p>
+<p><a href="{{var subscriber.getConfirmationLink()}}">{{var subscriber.getConfirmationLink()}}</a></p>
+
+{{template config_path="design/email/footer_template"}}
