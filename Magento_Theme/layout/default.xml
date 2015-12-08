@@ -31,5 +31,11 @@
         <!-- remove left-nav on category view -->
         <referenceBlock name="catalog.leftnav" remove="true" />
         <referenceBlock name="catalogsearch.leftnav" remove="true" />
+
+        <!-- Head (favicons) -->
+        <referenceBlock name="head.additional">
+            <block class="Magento\Framework\View\Element\Template" name="favicons" template="Magento_Theme::html/favicons/favicons.phtml" />
+        </referenceBlock>
+
     </body>
 </page>
