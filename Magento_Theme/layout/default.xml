@@ -37,5 +37,10 @@
             <block class="Magento\Framework\View\Element\Template" name="favicons" template="Magento_Theme::html/favicons/favicons.phtml" />
         </referenceBlock>
 
+        <!-- Facebook SDK -->
+        <referenceContainer name="root">
+           <block class="Magento\Framework\View\Element\Template" name="facebook-sdk" before="-" template="Magento_Theme::html/facebook-sdk.phtml" />
+        </referenceContainer>
+
     </body>
 </page>
