@@ -680,6 +680,40 @@
     }
 }
 
+//
+//  contact
+//  _____________________________________________
 
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
 
+    .contact.form {
 
+        .fieldset .legend {
+            margin-left: 0!important;
+        }
+
+        .actions-toolbar,
+        .actions-toolbar {
+            margin-left: 36% !important;
+        }
+
+        .fieldset > .field.choice:before,
+        .fieldset > .field.no-label:before {
+            width: 0px;
+            padding: 0px;
+        }
+
+        .fieldset > .field.choice,
+        .fieldset > .field.no-label {
+            padding-left: 0;
+        }
+
+        .fieldset > .field:not(.choice) > .label {
+            width: 36%;
+        }
+
+        .fieldset > .field:not(.choice) > .control {
+            width: 64%;
+        }
+    }
+}
