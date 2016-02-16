@@ -27,6 +27,20 @@
         <referenceBlock name="catalog-search-advanced-link" remove="true" />
         <referenceBlock name="sales-guest-form-link" remove="true" />
         <referenceBlock name="search-term-popular-link" remove="true" />
+        <referenceBlock name="footer_links">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="verzendingen-en-retours-link" after="privacy-policy-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Verzendingen en retours</argument>
+                    <argument name="path" xsi:type="string">verzendingen-en-retours</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="algemene-voorwaarden-link" before="privacy-policy-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Algemene voorwaarden</argument>
+                    <argument name="path" xsi:type="string">algemene-voorwaarden</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
 
         <!-- remove left-nav on category view -->
         <referenceBlock name="catalog.leftnav" remove="true" />
