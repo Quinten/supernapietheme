@@ -1,8 +1,3 @@
-/**
- * Copyright © 2015 Webwolk. All rights reserved.
- * See LICENSE for license details.
- */
-
 //
 //  Supernapie css customisation
 //  _____________________________________________
@@ -545,6 +540,15 @@
             display: none;
         }
     }
+
+    .product-info-main .product.attibute.sku {
+        display: none;
+    }
+
+    .rating-summary .rating-result > span:before,
+    .review-control-vote label:before {
+        color: @color-orange-red1;
+    }
 }
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
@@ -560,6 +564,16 @@
             .product.media {
                 width: 47%;
             }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+    .catalog-product-view {
+
+        .product.media {
+            margin-bottom: 1em;
         }
     }
 }
