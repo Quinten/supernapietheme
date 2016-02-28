@@ -583,6 +583,42 @@
 }
 
 //
+//  Cart
+//  ____
+
+& when (@media-common = true) {
+
+    .checkout-cart-index {
+
+        .cart-summary {
+
+            .block.shipping {
+                display: none;
+            }
+
+            .block.discount {
+                display: none;
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+    .checkout-cart-index {
+
+        .cart-summary {
+            width: 27%;
+            top: 0px !important;
+        }
+
+        .cart-container .form-cart {
+            width: 70%;
+        }
+    }
+}
+
+//
 //  Checkout
 //  _____________________________________________
 
