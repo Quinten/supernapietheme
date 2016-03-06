@@ -608,6 +608,10 @@
             }
         }
     }
+
+    .cart-container .checkout-methods-items .item + .item {
+        display: none;
+    }
 }
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
