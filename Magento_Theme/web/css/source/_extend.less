@@ -637,6 +637,10 @@
 
     .checkout-index-index {
 
+        .logo {
+            margin-left: auto;
+        }
+
         .nav-sections {
             display: block;
         }
@@ -648,16 +652,28 @@
         .minicart-wrapper {
             display: none;
         }
+
+        .opc-estimated-wrapper .minicart-wrapper {
+            display: block;
+        }
     }
 
     .cart-summary {
         padding: 20px;
+    }
+
+    .authentication-wrapper {
+        margin-top: -71px;
     }
 }
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
 
     .checkout-index-index {
+
+        .logo {
+            margin-left: 0;
+        }
 
         .nav-toggle {
             display: none;
@@ -666,6 +682,10 @@
         .minicart-wrapper {
             display: inline-block;
         }
+    }
+
+    .authentication-wrapper {
+        margin-top: 0;
     }
 }
 
