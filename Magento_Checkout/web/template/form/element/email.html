@@ -35,16 +35,16 @@
         <fieldset class="fieldset hidden-fields" data-bind="fadeVisible: isPasswordVisible">
             <div class="field">
                 <label class="label" for="customer-password">
-                    <span data-bind="i18n: 'Password'"></span>
+                    <span data-bind="i18n: 'Wachtwoord'"></span>
                 </label>
                 <div class="control">
                     <input class="input-text"
-                           placeholder="optional"
+                           placeholder="optioneel"
                            type="password"
                            name="password"
                            id="customer-password"
                            data-validate="{required:true, 'validate-password':true}" autocomplete="off"/>
-                    <span class="note" data-bind="i18n: 'You already have an account with us. Sign in or continue as guest.'"></span>
+                    <span class="note" data-bind="i18n: 'Je hebt al een account bij ons. Log in of ga door als gast.'"></span>
                 </div>
 
             </div>
@@ -54,11 +54,11 @@
             <div class="actions-toolbar">
                 <input name="context" type="hidden" value="checkout" />
                 <div class="primary">
-                    <button type="submit" class="action login primary" data-action="checkout-method-login"><span data-bind="i18n: 'Login'"></span></button>
+                    <button type="submit" class="action login primary" data-action="checkout-method-login"><span data-bind="i18n: 'Log in'"></span></button>
                 </div>
                 <div class="secondary">
                     <a class="action remind" data-bind="attr: { href: forgotPasswordUrl }">
-                        <span data-bind="i18n: 'Forgot Your Password?'"></span>
+                        <span data-bind="i18n: 'Wachtwoord vergeten?'"></span>
                     </a>
                 </div>
             </div>
