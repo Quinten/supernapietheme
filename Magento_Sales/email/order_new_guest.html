@@ -24,7 +24,7 @@
             <p class="greeting">{{trans "%name," name=$order.getBillingAddress().getName()}}</p>
             <p>
                 {{trans "Bedankt voor je bestelling bij %store_name." store_name=$store.getFrontendName()}}
-                {{trans 'Als je vragen hebt over je bestelling, dan je mij contacteren via <a href="mailto:%store_email">%store_email</a>' store_email=$store_email |raw}}{{depend store_phone}} {{trans 'of mij bereiken op nummer <a href="tel:%store_phone">%store_phone</a>' store_phone=$store_phone |raw}}{{/depend}}.
+                {{trans 'Als je vragen hebt over je bestelling, dan kan je mij contacteren via <a href="mailto:%store_email">%store_email</a>' store_email=$store_email |raw}}{{depend store_phone}} {{trans 'of mij bereiken op nummer <a href="tel:%store_phone">%store_phone</a>' store_phone=$store_phone |raw}}{{/depend}}.
             </p>
         </td>
     </tr>
