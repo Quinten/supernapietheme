@@ -24,11 +24,10 @@
         <td>
             <p class="greeting">{{trans "%name," name=$billing.getName()}}</p>
             <p>
-                {{trans "Thank you for your order from %store_name." store_name=$store.getFrontendName()}}
-                {{trans 'If you have questions about your order, you can email us at <a href="mailto:%store_email">%store_email</a>' store_email=$store_email |raw}}{{depend store_phone}} {{trans 'or call us at <a href="tel:%store_phone">%store_phone</a>' store_phone=$store_phone |raw}}{{/depend}}.
-                {{depend store_hours}}
-                    {{trans 'Our hours are <span class="no-link">%store_hours</span>.' store_hours=$store_hours |raw}}
-                {{/depend}}
+                {{trans "Bedankt voor je bestelling bij %store_name." store_name=$store.getFrontendName()}}
+            </p>
+            <p>
+                {{trans 'Als je vragen hebt over je bestelling, dan kan je mij contacteren via <a href="mailto:%store_email">%store_email</a>' store_email=$store_email |raw}}{{depend store_phone}} {{trans 'of mij bereiken op nummer <a href="tel:%store_phone">%store_phone</a>' store_phone=$store_phone |raw}}{{/depend}}.
             </p>
         </td>
     </tr>
