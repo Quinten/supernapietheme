@@ -36,4 +36,12 @@ define([
         }
     });
 
+    $('.more-info-link').click(function (e) {
+        $(this).parent().prev().addClass('active');
+    });
+
+    $('.less-info-link').click(function (e) {
+        $(this).parent().prev().prev().removeClass('active');
+    });
+
 });

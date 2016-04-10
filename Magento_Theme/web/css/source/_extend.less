@@ -967,3 +967,38 @@
         background: @supernapie-pale-blue;
     }
 }
+
+
+//
+//  More/less info
+//  ______________
+
+& when (@media-common = true) {
+
+    .more-info-content-container {
+        display: none;
+
+        + .more-info-link-container {
+
+            + .less-info-link-container {
+                display: none;
+            }
+        }
+
+        &.active {
+            display: block;
+
+            + .more-info-link-container {
+                display: none;
+
+                + .less-info-link-container {
+                    display: block;
+                }
+            }
+        }
+
+        ul {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
