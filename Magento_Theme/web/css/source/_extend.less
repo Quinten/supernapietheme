@@ -583,6 +583,36 @@
 }
 
 //
+//  Price
+//  _____
+
+& when (@media-common = true) {
+
+    .price-box {
+
+        .price-label {
+            display: none;
+        }
+
+        .old-price,
+        .regular-price,
+        .special-price {
+            display: inline-block;
+        }
+
+        .old-price {
+            opacity: 0.75;
+        }
+    }
+
+    .product-info-main .price-box .old-price .price-wrapper .price,
+    .product-options-bottom .price-box .old-price .price-wrapper .price {
+        font-size: 1.4rem;
+        font-weight: normal;
+    }
+}
+
+//
 //  Cart
 //  ____
 
