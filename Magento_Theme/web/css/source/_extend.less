@@ -58,6 +58,29 @@
 }
 
 //
+//  Forms
+//  _____
+
+& when (@media-common = true) {
+
+    input[type="text"],
+    input[type="password"],
+    input[type="url"],
+    input[type="tel"],
+    input[type="search"],
+    input[type="number"],
+    input[type="datetime"],
+    input[type="email"] {
+
+        // remove autofill yellow color in chrome
+        &:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0px 1000px @supernapie-base-white inset;
+            -webkit-text-fill-color: @supernapie-base-black !important;
+        }
+    }
+}
+
+//
 //  Icons
 //  _____
 
