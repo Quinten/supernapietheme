@@ -537,6 +537,54 @@
 }
 
 //
+//  Webwinkel intro
+//  _______________
+
+& when (@media-common = true) {
+
+    .category-webwinkel {
+
+        .columns {
+            display: none;
+        }
+    }
+
+    .webwinkel-tegels {
+
+        .kotn > div {
+            position: relative;
+
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        span.label {
+            font-size: 2.1rem;
+            margin: 0;
+            position: absolute;
+            padding: 1rem 2rem;
+            box-sizing: border-box;
+            width: 100%;
+            background: rgba(255,255,255,.75);
+            text-align: center;
+            bottom: 0;
+            font-family: @font-family__secondary;
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
+
+    .webwinkel-tegels {
+        background: @color-gray91;
+        padding: 3%;
+    }
+}
+
+//
 //  Category view
 //  _____________
 
