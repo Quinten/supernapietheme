@@ -2995,8 +2995,9 @@ jQuery.each({
 	},
 	contents: function( elem ) {
 		return jQuery.nodeName( elem, "iframe" ) ?
-			elem.contentDocument || elem.contentWindow.document :
-			jQuery.merge( [], elem.childNodes );
+                    ((jQuery(elem).attr('src').indexOf('//' + window.location.hostname) != -1) ?
+                        (elem.contentDocument || elem.contentWindow.document) : []) :
+			        jQuery.merge( [], elem.childNodes );
 	}
 }, function( name, fn ) {
 	jQuery.fn[ name ] = function( until, selector ) {
