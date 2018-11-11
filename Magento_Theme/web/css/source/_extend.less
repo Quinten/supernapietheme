@@ -802,6 +802,96 @@
     .cart-container .checkout-methods-items .item + .item {
         display: none;
     }
+
+    .opc-block-summary,
+    #cart-totals {
+
+        table {
+            border-color: transparent;
+
+            tbody {
+                border-color: transparent;
+            }
+
+            th {
+                background: transparent;
+            }
+
+            td {
+                border-bottom: 0;
+            }
+        }
+    }
+
+    .cart-totals .totals-tax-summary .mark,
+    .cart-totals .totals-tax-summary .amount,
+    .opc-block-summary .table-totals .totals-tax-summary .mark,
+    .opc-block-summary .table-totals .totals-tax-summary .amount,
+    .cart-totals .totals-tax-details,
+    .opc-block-summary .table-totals .totals-tax-details {
+        border-top: 0;
+        border-bottom: 0;
+    }
+
+    .grand.totals.incl {
+
+        th, td {
+            border-top: 1px solid #b9b0af;
+        }
+    }
+
+    .cart-totals .grand .mark,
+    .cart-totals .grand .amount,
+    .opc-block-summary .table-totals .grand .mark,
+    .opc-block-summary .table-totals .grand .amount {
+        padding-top: 8px;
+    }
+
+    .cart-totals .grand.incl .mark,
+    .cart-totals .grand.incl .amount,
+    .opc-block-summary .table-totals .grand.incl .mark,
+    .opc-block-summary .table-totals .grand.incl .amount {
+        padding-top: 16px;
+    }
+
+    .cart-totals .totals-tax-summary .mark,
+    .cart-totals .totals-tax-summary .amount {
+        padding-bottom: 16px;
+    }
+
+    .cart-totals .totals-tax-details .mark,
+    .cart-totals .totals-tax-details .amount {
+        padding-top: 0;
+        padding-bottom: 16px;
+    }
+
+    .cart.table-wrapper th.col {
+        padding-top: 8px;
+        background: transparent;
+    }
+
+    #shopping-cart-table {
+
+        td {
+            border-bottom: 0;
+        }
+    }
+
+    .cart.table-wrapper .actions-toolbar > .action {
+
+        &.action-delete,
+        &.action-edit {
+            .lib-button-reset();
+            display: inline-block;
+            margin: 0 1em 0 0;
+
+            .lib-link();
+        }
+
+        &.action-gift {
+            margin-right: 1em;
+        }
+    }
 }
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
@@ -870,6 +960,14 @@
 
     .authentication-wrapper {
         margin-top: -71px;
+    }
+
+    .opc-block-summary {
+        background: @supernapie-base-lace;
+
+        > .title {
+            &:extend(h3);
+        }
     }
 }
 
