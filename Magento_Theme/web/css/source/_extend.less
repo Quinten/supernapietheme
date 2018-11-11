@@ -655,13 +655,59 @@
         }
     }
 
-    .product-info-main .product.attribute.sku {
-        display: none;
+    .product-info-main {
+        margin-bottom: 40px;
+
+        .product.attribute.sku {
+            display: none;
+        }
     }
 
     .rating-summary .rating-result > span:before,
     .review-control-vote label:before {
         color: @color-orange-red1;
+    }
+
+    .product-info-main .box-tocart {
+        margin: 10px 0;
+
+        .field.qty {
+            display: table-cell;
+            padding-right: 10px;
+        }
+
+        .fieldset .actions {
+            display: table-cell;
+            padding-top: 0;
+            text-align: center;
+            vertical-align: bottom;
+        }
+
+        .fieldset > .field.qty > .label {
+            display: none;
+        }
+    }
+
+    .product-info-stock-sku {
+        margin: 10px 0 20px;
+    }
+
+    .product.media .fotorama__thumb-border {
+        border-color: @supernapie-base-pink;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-bottom: 6px solid @supernapie-base-pink;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            left: 50%;
+            bottom: 0;
+            margin-left: -6px;
+            z-index: 5;
+        }
     }
 }
 
