@@ -14,19 +14,19 @@
             </image>
             <image id="cart_cross_sell_products" type="thumbnail">
                 <width>152</width>
-                <height>188</height>
+                <height>152</height>
             </image>
             <image id="cart_page_product_thumbnail" type="small_image">
                 <width>110</width>
-                <height>160</height>
+                <height>110</height>
             </image>
             <image id="category_page_grid" type="small_image">
                 <width>240</width>
-                <height>300</height>
+                <height>240</height>
             </image>
             <image id="category_page_list" type="small_image">
                 <width>240</width>
-                <height>300</height>
+                <height>240</height>
             </image>
             <image id="customer_account_my_tags_tag_view" type="small_image">
                 <width>100</width>
@@ -54,7 +54,7 @@
             </image>
             <image id="new_products_content_widget_grid" type="small_image">
                 <width>240</width>
-                <height>300</height>
+                <height>240</height>
             </image>
             <image id="new_products_content_widget_list" type="small_image">
                 <width>270</width>
@@ -107,11 +107,11 @@
             </image>
             <image id="recently_compared_products_grid_content_widget" type="small_image">
                 <width>240</width>
-                <height>300</height>
+                <height>240</height>
             </image>
             <image id="recently_compared_products_images_names_widget" type="thumbnail">
                 <width>75</width>
-                <height>90</height>
+                <height>75</height>
             </image>
             <image id="recently_compared_products_images_only_widget" type="thumbnail">
                 <width>76</width>
@@ -119,15 +119,15 @@
             </image>
             <image id="recently_compared_products_list_content_widget" type="small_image">
                 <width>270</width>
-                <height>207</height>
+                <height>270</height>
             </image>
             <image id="recently_viewed_products_grid_content_widget" type="small_image">
                 <width>240</width>
-                <height>300</height>
+                <height>240</height>
             </image>
             <image id="recently_viewed_products_images_names_widget" type="small_image">
                 <width>75</width>
-                <height>90</height>
+                <height>75</height>
             </image>
             <image id="recently_viewed_products_images_only_widget" type="small_image">
                 <width>76</width>
@@ -159,7 +159,7 @@
             </image>
             <image id="side_column_widget_product_thumbnail" type="thumbnail">
                 <width>75</width>
-                <height>90</height>
+                <height>75</height>
             </image>
             <image id="upsell_products_list" type="small_image">
                 <width>140</width>
@@ -167,7 +167,7 @@
             </image>
             <image id="wishlist_sidebar_block" type="thumbnail">
                 <width>75</width>
-                <height>90</height>
+                <height>75</height>
             </image>
             <image id="wishlist_small_image" type="small_image">
                 <width>113</width>
@@ -175,7 +175,7 @@
             </image>
             <image id="wishlist_thumbnail" type="small_image">
                 <width>240</width>
-                <height>300</height>
+                <height>240</height>
             </image>
         </images>
     </media>
@@ -188,7 +188,7 @@
             <var name="keyboard">true</var> <!-- Turn on/off keyboard arrows navigation (true/false) -->
             <var name="arrows">true</var> <!-- Turn on/off arrows on the sides preview (true/false) -->
             <var name="caption">false</var> <!-- Display alt text as image title (true/false) -->
-            <var name="allowfullscreen">true</var> <!-- Turn on/off fullscreen (true/false) -->
+            <var name="allowfullscreen">false</var> <!-- Turn on/off fullscreen (true/false) -->
             <var name="navdir">horizontal</var> <!-- Sliding direction of thumbnails (horizontal/vertical) -->
             <var name="navarrows">true</var> <!-- Turn on/off on the thumbs navigation sides arrows(true/false) -->
             <var name="navtype">slides</var> <!-- Sliding type of thumbnails (slides/thumbs) -->
