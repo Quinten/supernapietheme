@@ -23,10 +23,12 @@
             <p class="greeting">{{trans "%customer_name," customer_name=$order.getCustomerName()}}</p>
             <p>
                 {{trans "Bedankt voor je bestelling bij %store_name." store_name=$store.getFrontendName()}}
-                {{trans 'Je kan de status van je bestelling bekijken <a href="%account_url">door in te loggen op de website</a>.' account_url=$this.getUrl($store,'customer/account/',[_nosid:1]) |raw}}
             </p>
             <p>
-                {{trans 'Als je vragen hebt over je bestelling, dan kan je mij contacteren via <a href="mailto:%store_email">%store_email</a>' store_email=$store_email |raw}}{{depend store_phone}} {{trans 'of mij bereiken op nummer <a href="tel:%store_phone">%store_phone</a>' store_phone=$store_phone |raw}}{{/depend}}.
+                Nadat het pakket verstuurd is, ontvang je van ons nog een e-mail met daarin alle info zodat je de zending kunt opvolgen indien je dit wenst.
+            </p>
+            <p>
+                {{trans 'Als je vragen of opmerkingen hebt over je bestelling, aarzel dan niet om mij te contacteren via <a href="mailto:%store_email">%store_email</a>' store_email=$store_email |raw}}{{depend store_phone}} {{trans 'of om mij te bellen op het nummer <a href="tel:%store_phone">%store_phone</a>' store_phone=$store_phone |raw}}{{/depend}}.
             </p>
         </td>
     </tr>
