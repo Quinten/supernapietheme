@@ -1,0 +1,17 @@
+{
+    "name": "quinten/supernapietheme",
+    "description": "The theme for supernapie",
+    "require": {
+        "php": "~5.6.0|>=7.0.0",
+        "magento/theme-frontend-blank": "^100.3.3"
+    },
+    "type": "magento2-theme",
+    "license": [
+        "OSL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ]
+    }
+}
