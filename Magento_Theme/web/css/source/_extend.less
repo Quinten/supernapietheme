@@ -107,6 +107,7 @@
         font-size: 20px;
         position: absolute;
         left: 9px;
+        top: 35px;
         width: 20px;
         height: 33px;
         text-align: center;
@@ -536,11 +537,13 @@
         }
     }
 
-
-
     // allow more items when window width is around 768px
     .navigation .level0 {
         margin: 0;
+    }
+
+    .navigation .level0.parent > .level-top > .ui-menu-icon {
+        display: none;
     }
 }
 
@@ -1109,6 +1112,18 @@
         }
     }
 
+    .abs-margin-for-forms-desktop,
+    .fieldset .legend,
+    .column:not(.sidebar-main) form .actions-toolbar,
+    .column:not(.sidebar-additional) form .actions-toolbar,
+    .login-container .fieldset:after {
+        margin-left: 27.5%;
+    }
+
+    .fieldset > .field.choice:before, .fieldset > .field.no-label:before {
+        width: 27.5%;
+    }
+
     .legend {
         margin-left: 27.5%!important;
     }
@@ -1117,6 +1132,14 @@
 //
 //  contact
 //  _______
+
+& when (@media-common = true) {
+
+    .contact-index-index .column.main:not(.sidebar-additional) .form.contact {
+        min-width: 0;
+        width: 100%;
+    }
+}
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
 
